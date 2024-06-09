@@ -1,0 +1,57 @@
+.about {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    animation: fadeIn 3s ease;
+}
+
+body{
+    background-color: #212121;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: left;
+}
+
+.profile-img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 20rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
