@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #212121;
     position: fixed;
     height: 100vh;
@@ -6,7 +6,7 @@ body{
     animation: fadeIn 3s ease;
 }
 
-.education-div{
+.education-div {
     padding: 2rem;
     text-align: center;
     color: white;
@@ -22,7 +22,40 @@ body{
     }
 }
 
-img{
-    height: 10rem;
-    width: 10rem;
+.education-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.education-item {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+}
+
+.education-item img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.education-item h2 {
+    margin: 0.5rem 0;
+}
+
+.education-time {
+    font-size: 1rem;
+    color: #bbb;
 }
