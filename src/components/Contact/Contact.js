@@ -12,7 +12,11 @@ const fadeIn = keyframes`
 `;
 
 const ContactContainer = styled.div`
-    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
     color: white;
     animation: ${fadeIn} 3s ease;
