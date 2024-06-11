@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import Education from './components/Education/Education';
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Navbar/>
+          <Analytics/>
         </header>
         <Routes>
           <Route path='/' element={<Home/>} />
