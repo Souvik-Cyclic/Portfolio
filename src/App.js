@@ -8,6 +8,7 @@ import Education from './components/Education/Education';
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <header className="App-header">
           <Navbar/>
           <Analytics/>
+          <SpeedInsights/>
         </header>
         <Routes>
           <Route path='/' element={<Home/>} />
